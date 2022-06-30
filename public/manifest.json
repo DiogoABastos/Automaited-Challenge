@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Automaited browser extension",
+    "description": "Browser extension to interact with the Automaited frontend challenge page",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://npdot9.csb.app/"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "https://npdot9.csb.app/"
+    ]
+}
